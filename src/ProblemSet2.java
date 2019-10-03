@@ -196,12 +196,12 @@ public class ProblemSet2 {
          *
          * Given a side length, print the area and perimeter of the corresponding hexagon.
          */
-         System.out.print("Enter a side length: ");
-         double lengthHexagon = in.nextDouble();
-         double perimeterHexagon = 6 * lengthHexagon;
-         double areaHexagon = ((3 * Math.sqrt(3)) / 2) * Math.pow(lengthHexagon, 2);
-         System.out.printf("AREA\t  : %.2f\n", areaHexagon);
-         System.out.printf("PERIMETER : %.2f\n", perimeterHexagon);
+         // System.out.print("Enter a side length: ");
+         // double lengthHexagon = in.nextDouble();
+         // double perimeterHexagon = 6 * lengthHexagon;
+         // double areaHexagon = ((3 * Math.sqrt(3)) / 2) * Math.pow(lengthHexagon, 2);
+         // System.out.printf("AREA\t  : %.2f\n", areaHexagon);
+         // System.out.printf("PERIMETER : %.2f\n", perimeterHexagon);
 
 
         /*
@@ -209,7 +209,12 @@ public class ProblemSet2 {
          *
          * Given a string, reverse and print the first and second halves of that string.
          */
-
+         System.out.print("Enter a string: ");
+         String splitString = in.next();
+         int stringHalfLength = Math.round(splitString.length() / 2);
+         String stringHalf1 = splitString.substring(0, stringHalfLength);
+         String stringHalf2 = splitString.substring(stringHalfLength);
+         System.out.println(stringHalf2 + stringHalf1);
 
 
         /*
