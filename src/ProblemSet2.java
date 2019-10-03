@@ -161,13 +161,13 @@ public class ProblemSet2 {
          *
          * Given a diameter, print the area and circumference of the corresponding circle.
          */
-         System.out.print("Enter a diameter: ");
-         double diameter = in.nextDouble();
-         double radius = diameter / 2;
-         double areaCircle = Math.PI * Math.pow(radius, 2);
-         double circumference = Math.PI * diameter;
-         System.out.printf("AREA\t     : %.2f\n", areaCircle);
-         System.out.printf("CIRCUMFERENCE: %.2f\n", circumference);
+         // System.out.print("Enter a diameter: ");
+         // double diameter = in.nextDouble();
+         // double radius = diameter / 2;
+         // double areaCircle = Math.PI * Math.pow(radius, 2);
+         // double circumference = Math.PI * diameter;
+         // System.out.printf("AREA\t     : %.2f\n", areaCircle);
+         // System.out.printf("CIRCUMFERENCE: %.2f\n", circumference);
 
 
 
@@ -179,7 +179,16 @@ public class ProblemSet2 {
          * Given a length and width, print the area, perimeter, and diagonal of the
          * corresponding rectangle.
          */
-
+         System.out.print("Enter a length: ");
+         double lengthRectangle = in.nextDouble();
+         System.out.print("Enter a width: ");
+         double widthRectangle = in.nextDouble();
+         double areaRectangle = lengthRectangle * widthRectangle;
+         double perimeterRectangle = (2 * lengthRectangle) + (2 * widthRectangle);
+         double diagonal = Math.sqrt(Math.pow(lengthRectangle, 2) + Math.pow(widthRectangle, 2));
+         System.out.printf("AREA\t  : %.2f\n", areaRectangle);
+         System.out.printf("PERIMETER : %.2f\n", perimeterRectangle);
+         System.out.printf("DIAGONAL  : %.2f\n", diagonal);
 
 
         /*
