@@ -141,6 +141,18 @@ public class ProblemSet2 {
          * Given a number of centimeters, print the equivalent number of kilometers,
          * meters, and centimeters.
          */
+         final double KM_VALUE = 100000;
+         final double METER_VALUE = 100;
+         System.out.print("Enter a number of centimeters: ");
+         double leftoverCM = in.nextDouble();
+         int numberOfKM = (int) (leftoverCM / KM_VALUE);
+         leftoverCM %= KM_VALUE;
+         int numberOfMeters = (int) (leftoverCM / METER_VALUE);
+         leftoverCM %= METER_VALUE;
+         int numberOfCM = (int) leftoverCM;
+         System.out.println("\Kilometers\t: " + numberOfKM);
+         System.out.println("Meters\t: " + numberOfMeters);
+         System.out.println("Centimeters\t: " + numberOfCM);
 
 
 
