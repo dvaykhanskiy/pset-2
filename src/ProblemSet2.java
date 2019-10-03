@@ -179,16 +179,16 @@ public class ProblemSet2 {
          * Given a length and width, print the area, perimeter, and diagonal of the
          * corresponding rectangle.
          */
-         System.out.print("Enter a length: ");
-         double lengthRectangle = in.nextDouble();
-         System.out.print("Enter a width: ");
-         double widthRectangle = in.nextDouble();
-         double areaRectangle = lengthRectangle * widthRectangle;
-         double perimeterRectangle = (2 * lengthRectangle) + (2 * widthRectangle);
-         double diagonal = Math.sqrt(Math.pow(lengthRectangle, 2) + Math.pow(widthRectangle, 2));
-         System.out.printf("AREA\t  : %.2f\n", areaRectangle);
-         System.out.printf("PERIMETER : %.2f\n", perimeterRectangle);
-         System.out.printf("DIAGONAL  : %.2f\n", diagonal);
+         // System.out.print("Enter a length: ");
+         // double lengthRectangle = in.nextDouble();
+         // System.out.print("Enter a width: ");
+         // double widthRectangle = in.nextDouble();
+         // double areaRectangle = lengthRectangle * widthRectangle;
+         // double perimeterRectangle = (2 * lengthRectangle) + (2 * widthRectangle);
+         // double diagonal = Math.sqrt(Math.pow(lengthRectangle, 2) + Math.pow(widthRectangle, 2));
+         // System.out.printf("AREA\t  : %.2f\n", areaRectangle);
+         // System.out.printf("PERIMETER : %.2f\n", perimeterRectangle);
+         // System.out.printf("DIAGONAL  : %.2f\n", diagonal);
 
 
         /*
@@ -196,7 +196,12 @@ public class ProblemSet2 {
          *
          * Given a side length, print the area and perimeter of the corresponding hexagon.
          */
-
+         System.out.print("Enter a side length: ");
+         double lengthHexagon = in.nextDouble();
+         double perimeterHexagon = 6 * lengthHexagon;
+         double areaHexagon = ((3 * Math.sqrt(3)) / 2) * Math.pow(lengthHexagon, 2);
+         System.out.printf("AREA\t  : %.2f\n", areaHexagon);
+         System.out.printf("PERIMETER : %.2f\n", perimeterHexagon);
 
 
         /*
